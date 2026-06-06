@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart - NeoStore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 Your Cart</h1>
+        <a href="index.html" class="cart-btn">← Continue Shopping</a>
+    </header>
+
+    <div class="cart-container">
+
+        <div id="cart"></div>
+
+        <div class="bill-card">
+            <h2>Order Summary</h2>
+            <p id="total">Total: ₹0</p>
+
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

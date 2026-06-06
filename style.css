@@ -1,0 +1,114 @@
+ body {
+     background: radial-gradient(circle at top left, #0f172a, #020617);
+     color: white;
+ }
+
+/* HEADER */
+header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+header input {
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px;
+}
+
+.filters button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #1f2937;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background: #4f46e5;
+}
+
+/* GRID */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.product {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    animation: fadeUp 0.4s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.imgBox {
+    height: 180px;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+.price {
+    color: #22c55e;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4f46e5;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6366f1;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
